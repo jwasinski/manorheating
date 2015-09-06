@@ -1,0 +1,504 @@
+/* line 17, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* SCROLLR */
+/* line 12, ../sass/screen.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%; }
+
+/* line 23, ../sass/screen.scss */
+p {
+  font-family: "ArcherPro-Bold", serif;
+  font-size: 20px;
+  line-height: 32px; }
+
+/* line 30, ../sass/screen.scss */
+div#bg {
+  background-image: url(../images/bg.jpg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  background-attachment: fixed; }
+
+/* line 41, ../sass/screen.scss */
+.holder {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center; }
+
+/* line 48, ../sass/screen.scss */
+.skrollable {
+  position: fixed;
+  z-index: 100; }
+
+/* line 53, ../sass/screen.scss */
+.skrollable .skrollable {
+  position: absolute; }
+
+/* line 57, ../sass/screen.scss */
+.skrollable .skrollable .skrollable {
+  position: static; }
+
+/* ------ UNIT 1 --------- */
+/* line 63, ../sass/screen.scss */
+.home {
+  background-image: url(../images/home-fold.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+/* line 69, ../sass/screen.scss */
+.home .content {
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  width: 100%;
+  margin: 0 auto; }
+
+/* line 76, ../sass/screen.scss */
+.home h1 {
+  font-family: "ClarendonLTStd", serif;
+  color: #fff;
+  text-shadow: 0px 0px 8px #111111;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  font-size: 90px;
+  line-height: 85px;
+  margin-bottom: 8px;
+  margin-top: 42px; }
+
+/* line 89, ../sass/screen.scss */
+.home h2 {
+  font-family: "ArcherPro-Bold", serif;
+  color: #fff;
+  text-shadow: 0px 0px 8px #111111;
+  letter-spacing: 1px;
+  font-size: 37px;
+  line-height: 30px;
+  margin-bottom: 31px; }
+
+/* line 99, ../sass/screen.scss */
+img.gas-safe {
+  position: absolute;
+  bottom: 5%;
+  right: 5%; }
+
+/* ------ NAV --------- */
+/* line 107, ../sass/screen.scss */
+.nav {
+  background-color: #181818;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  width: 100%;
+  height: 75px;
+  z-index: 120; }
+
+/* line 115, ../sass/screen.scss */
+.nav li {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d2a163), color-stop(100%, #b56b42));
+  background-image: -webkit-linear-gradient(top, #d2a163, #b56b42);
+  background-image: -o-linear-gradient(transparent, transparent);
+  background-image: linear-gradient(top, #d2a163, #b56b42);
+  font-family: "ClarendonLTStd-Bold", serif;
+  letter-spacing: 1px;
+  padding-right: 25px;
+  padding-top: 15px;
+  float: right;
+  position: static;
+  height: 52px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 27px;
+  line-height: 59px;
+  display: inline-block; }
+
+  .nav li a {
+    color: #d2a163;
+  }
+
+  .nav li a:hover {
+    color:#b56b42;
+  }
+
+/* line 132, ../sass/screen.scss */
+.nav li:last-child {
+  float: left;
+  padding-left: 25px; }
+
+/* line 138, ../sass/screen.scss */
+.nav li:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d2a163), color-stop(100%, #95441a));
+  background-image: -webkit-linear-gradient(top, #d2a163, #95441a);
+  background-image: -o-linear-gradient(transparent, transparent);
+  background-image: linear-gradient(top, #d2a163, #95441a);
+  text-decoration: underline !important; 
+  color: transparent;}
+
+/* line 144, ../sass/screen.scss */
+.nav ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+/* line 152, ../sass/screen.scss */
+span.logo {
+  background-image: url(../images/logo.png);
+  display: inline-block;
+  width: 380px;
+  background-repeat: no-repeat; 
+  color:transparent; }
+
+/* line 160, ../sass/screen.scss */
+span.logo:hover {
+  background-image: url(../images/logo-h.png); 
+  color:transparent; }
+
+/* -------- About Unit --------- */
+/* line 166, ../sass/screen.scss */
+h3 {
+  font-family: "ClarendonLTStd-Bold", serif;
+  color: #fff;
+  padding-top: 128px;
+  text-shadow: 0px 0px 8px #111111;
+  font-size: 57px;
+  line-height: 69px;
+  margin-bottom: 16px; }
+
+/* line 176, ../sass/screen.scss */
+h4 {
+  font-family: "ArcherPro-Book", serif;
+  color: #fff;
+  text-shadow: 0px 0px 8px #111111;
+  padding-top: 16px;
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+/* line 186, ../sass/screen.scss */
+p.sub {
+  letter-spacing: 1px;
+  font-weight: bold;
+  width: 90%;
+  margin: 0 auto;
+  text-shadow: 0px 0px 8px #111111; }
+
+/* line 194, ../sass/screen.scss */
+.center {
+  width: 100%;
+  margin: 0 auto; }
+
+/* line 199, ../sass/screen.scss */
+div.equation-b {
+  width: 40%;
+  display: inline-block;
+  float: left; }
+
+/* line 205, ../sass/screen.scss */
+div.equation-s {
+  width: 20%;
+  display: inline-block;
+  float: left; }
+
+/* line 211, ../sass/screen.scss */
+img.responsive {
+  width: 100%; }
+
+/* -------- ACTION ---------- */
+/* line 217, ../sass/screen.scss */
+.action {
+  width: 350px;
+  height: 50px;
+  line-height: 50px;
+  border: 3px solid #fff;
+  display: inline-block;
+  color: #fff;
+  font-family: "ArcherPro-Bold", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 21.6px;
+  text-align: center;
+  margin: 21.6px auto; }
+
+/* line 235, ../sass/screen.scss */
+.action:hover {
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px; }
+
+/* line 241, ../sass/screen.scss */
+.action:active {
+  background-color: #fff !important;
+  text-shadow: none;
+  color: #b04e22 !important; }
+
+/* ------- SERICES --------- */
+/* line 251, ../sass/screen.scss */
+div.service-container {
+  width: 250%; }
+
+/* line 256, ../sass/screen.scss */
+div.triple {
+  width: 12%;
+  margin: 1.5% auto;
+  float: left;
+  display: inline-block; }
+
+/* line 264, ../sass/screen.scss */
+img.big {
+  max-width: 380px;
+  margin: 0 auto;
+  width: 90%; }
+
+/* ------------- FORM -----------*/
+/* line 273, ../sass/screen.scss */
+fieldset {
+  width: 350px;
+  margin: 0 auto; }
+
+/* line 278, ../sass/screen.scss */
+input.quote, select.quote {
+  background-color: transparent;
+  text-align: center;
+  margin: 15px auto;
+  border: 3px solid #fff;
+  font-family: "ArcherPro-Bold", serif;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 21.6px;
+  width: 98%;
+  line-height: 36px; }
+
+/* line 292, ../sass/screen.scss */
+input.quote:valid, input.quote:valid:hover {
+  background-color: #fff;
+  text-shadow: none;
+  color: #b04e22; }
+
+/* line 298, ../sass/screen.scss */
+::-webkit-input-placeholder {
+  color: #fff; }
+
+/* line 299, ../sass/screen.scss */
+:-moz-placeholder {
+  color: #fff; }
+
+/* line 300, ../sass/screen.scss */
+::-moz-placeholder {
+  color: #fff; }
+
+/* line 301, ../sass/screen.scss */
+:-ms-input-placeholder {
+  color: #fff; }
+
+/* line 302, ../sass/screen.scss */
+input:focus::-webkit-input-placeholder {
+  color: transparent !important;
+  text-shadow: none; }
+
+/* line 303, ../sass/screen.scss */
+input:focus::-webkit-input-placeholder {
+  color: transparent !important;
+  text-shadow: none; }
+
+/* line 304, ../sass/screen.scss */
+input:focus::-moz-placeholder {
+  color: transparent !important;
+  text-shadow: none; }
+
+/* line 305, ../sass/screen.scss */
+input:focus:-moz-placeholder {
+  color: transparent !important;
+  text-shadow: none; }
+
+/* line 307, ../sass/screen.scss */
+select.quote {
+  background: url(../images/down-bg.png) no-repeat transparent;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  -webkit-appearance: none;
+  text-align: center;
+  padding: 7px;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333; }
+
+/* line 318, ../sass/screen.scss */
+select.quote:hover {
+  color: #b04e22;
+  border: 3px solid #fff;
+  text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  background: url(../images/down-bg-h.png) no-repeat transparent;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%; }
+
+/* line 327, ../sass/screen.scss */
+select.quote:focus:required:invalid {
+  color: #b04e22;
+  border: 3px solid #fff;
+  text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  background: url(../images/down-bg-h.png) no-repeat transparent;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%; }
+
+/* line 336, ../sass/screen.scss */
+select.quote:required:valid {
+  background: #fff;
+  text-shadow: none;
+  background-image: none;
+  color: #b04e22; }
+
+/* line 344, ../sass/screen.scss */
+select.quote:required:valid:hover {
+  background: #fff;
+  text-shadow: none;
+  background-image: none !important;
+  color: #b04e22; }
+
+/* line 352, ../sass/screen.scss */
+input.quote:hover {
+  color: #fff;
+  border: 3px solid #fff;
+  text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px; }
+
+/* line 359, ../sass/screen.scss */
+input.quote:focus {
+  background-color: #fff;
+  text-shadow: none;
+  color: #b04e22;
+  border: 3px solid #fff;
+  text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px; }
+
+/* line 368, ../sass/screen.scss */
+.quote.submit {
+  -webkit-appearance: none;
+  font-size: 32.4px;
+  width: 100%;
+  line-height: 45px;
+  margin: 15px auto;
+  text-align: center;
+  font-family: "ArcherPro-Bold", serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  background: transparent !important;
+  color: #fff !important; }
+
+/* line 382, ../sass/screen.scss */
+.quote.submit:hover, .quote.submit:focus {
+  -webkit-appearance: none;
+  color: #fff;
+  border: 3px solid #fff;
+  font-weight: bold;
+  background: #fff !important;
+  color: #b04e22 !important; }
+
+
+strong {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}

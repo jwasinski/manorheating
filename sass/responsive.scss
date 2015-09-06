@@ -1,0 +1,241 @@
+@import "vars"; // import _global_variables.scss
+@import "mixins"; // import _mixins.scss
+@import "compass/css3";
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+@import "compass/css3/opacity";
+
+br.mobile {
+	display:none;
+}
+
+/* Standard Browsers */
+@media only screen and (max-width: $baseWidth){
+
+.nav li {
+	font-size: 23px;
+	line-height: 52px;
+	margin-top:3px;
+	height:44px;
+}
+
+
+div.triple h4 {
+	font-size: 38px;
+}
+
+span.logo {
+	width:320px;
+	@include background-size(100% auto);
+}
+
+h3 {
+	padding-top:100px;
+	margin-bottom:6px;
+}
+
+}
+
+/* Smaller than standard #{strip-units($baseWidthMQ)} (devices and browsers) */
+@media only screen and (max-width: $baseWidthMQ - 1) {
+
+div.nav {
+	height: 65px;
+}
+
+.nav li {
+	font-size: 18px;
+	line-height: 52px;
+	padding-top:10px;
+	height:44px;
+}
+
+span.logo {
+	width:260px;
+	@include background-size(100% auto);
+	margin-top: 6px;
+}
+
+nav ul li {
+	padding-right: 0 !important;
+	margin:0 auto !important;
+	width:20% !important;
+	text-align:center !important;
+	position:relative !important;
+	float:right !important;
+}
+
+nav ul li:last-child{
+	float:none !important;
+	padding-left:0 !important;
+	
+}
+
+div.triple h4 {
+	font-size: 30px;
+}
+
+span.logo {
+	@include background-image(linear-gradient(top, #d2a163, #b56b42));
+  	font-family: "ClarendonLTStd-Bold", serif;
+  	letter-spacing:1px;
+	height: 44px;
+	line-height: 52px;
+	padding:0;
+	float: none;
+	text-align:center !important;
+	margin-top:0;
+  position:static;
+  text-transform:uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: auto;
+}
+
+h3 {
+	padding-top:90px;
+	margin-bottom:0px;
+	font-size:44px;
+}
+
+}
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: $tabletWidth - 1) {
+
+br.mobile {
+	display:block;
+	margin:round($base-font-size*0.7) 0;
+	line-height:round($base-font-size*0.7);
+	content:" ";
+}
+
+div.nav {
+	position:fixed !important;
+	top:0 !important;
+	height: 55px;
+}
+
+nav ul li {
+	font-size: 10px !important;
+	text-transform: normal;
+	padding-right: 0 !important;
+	padding-top: 5px !important;
+	margin:0 auto !important;
+	width:25% !important;
+	text-align:center !important;
+	position:relative !important;
+	float:right !important;
+}
+
+nav ul li:last-child{
+	float:none !important;
+	display: none;
+}
+
+div.triple h4 {
+	font-size: 16px;
+	letter-spacing: -1px;
+	text-transform: none;
+}
+
+span.logo {
+	height: 44px;
+	line-height: 52px;
+	padding-left: 0;
+	padding-right: 0;
+	float: none;
+	text-align:center !important;
+}
+
+h3 {
+	padding-top: 25px;
+	font-size:38px;
+	line-height: 1.2em;
+	text-transform: underline;
+	margin-bottom: 0.25em;
+}
+
+h3#contact {
+	font-size: 22px;
+	margin-bottom: 0.5em;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+
+.mobile-hidden {
+	display:none;
+}
+
+img.responsive {
+	padding-top: 10px;
+}
+
+div.content h1 {
+	margin-top: 15px;
+	margin-bottom: 0px;
+	font-size: 55px;	
+	line-height: 1.2em;
+}
+div.content h2 {
+	font-size: 28px;
+	line-height: 1.2em;
+	margin-bottom: 10px;
+}
+
+img.gallery {
+	width: 80%;
+}
+
+fieldset.info_fieldset {
+	width: 240px;
+}
+
+input#name.quote.abc.mandatory, input#email.quote.email.mandatory, input#phone.quote.numeric.mandatory {
+	margin: 10px auto !important;
+	padding: 1px !important;
+	line-height: 24px;
+	height: 24px;
+	font-size: 17px;
+	-webkit-apperance: none;
+}
+
+ input.quote.submit {
+ 	font-size: 17px;
+ 	-webkit-apperance: none;
+ 	margin: 10px auto !important;
+ }
+
+select.quote {
+	margin: 10px auto;
+	line-height: 20px;
+	font-size: 16px;
+	-webkit-apperance: none;
+}
+
+}
+
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+
+
+nav ul li {
+	font-size: 13px !important;
+	letter-spacing:0;
+	padding-top: 0px;
+}
+
+div.triple h4 {
+	font-size: 18px;
+}
+
+}

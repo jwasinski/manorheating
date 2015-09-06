@@ -1,0 +1,222 @@
+/* line 9, ../sass/responsive.scss */
+br.mobile {
+  display: none; }
+
+/* Standard Browsers */
+@media only screen and (max-width: 1200px) {
+  /* line 16, ../sass/responsive.scss */
+  .nav li {
+    font-size: 23px;
+    line-height: 52px;
+    margin-top: 3px;
+    height: 44px; }
+
+  /* line 24, ../sass/responsive.scss */
+  div.triple h4 {
+    font-size: 38px; }
+
+  /* line 28, ../sass/responsive.scss */
+  span.logo {
+    width: 320px;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto; }
+
+  /* line 33, ../sass/responsive.scss */
+  h3 {
+    padding-top: 100px;
+    margin-bottom: 6px; } }
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  /* line 43, ../sass/responsive.scss */
+  div.nav {
+    height: 65px; }
+
+  /* line 47, ../sass/responsive.scss */
+  .nav li {
+    font-size: 18px;
+    line-height: 52px;
+    padding-top: 10px;
+    height: 44px; }
+
+  /* line 54, ../sass/responsive.scss */
+  span.logo {
+    width: 260px;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+    margin-top: 6px; }
+
+  /* line 60, ../sass/responsive.scss */
+  nav ul li {
+    padding-right: 0 !important;
+    margin: 0 auto !important;
+    width: 20% !important;
+    text-align: center !important;
+    position: relative !important;
+    float: right !important; }
+
+  /* line 69, ../sass/responsive.scss */
+  nav ul li:last-child {
+    float: none !important;
+    padding-left: 0 !important; }
+
+  /* line 75, ../sass/responsive.scss */
+  div.triple h4 {
+    font-size: 30px; }
+
+  /* line 79, ../sass/responsive.scss */
+  span.logo {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d2a163), color-stop(100%, #b56b42));
+    background-image: -webkit-linear-gradient(top, #d2a163, #b56b42);
+    background-image: -moz-linear-gradient(top, #d2a163, #b56b42);
+    background-image: -o-linear-gradient(top, #d2a163, #b56b42);
+    background-image: linear-gradient(top, #d2a163, #b56b42);
+    font-family: "ClarendonLTStd-Bold", serif;
+    letter-spacing: 1px;
+    height: 44px;
+    line-height: 52px;
+    padding: 0;
+    float: none;
+    text-align: center !important;
+    margin-top: 0;
+    position: static;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: auto; }
+
+  /* line 96, ../sass/responsive.scss */
+  h3 {
+    padding-top: 90px;
+    margin-bottom: 0px;
+    font-size: 44px; } }
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  /* line 108, ../sass/responsive.scss */
+  br.mobile {
+    display: block;
+    margin: 13px 0;
+    line-height: 13px;
+    content: " "; }
+
+  /* line 115, ../sass/responsive.scss */
+  div.nav {
+    position: fixed !important;
+    top: 0 !important;
+    height: 55px; }
+
+  /* line 121, ../sass/responsive.scss */
+  nav ul li {
+    font-size: 10px !important;
+    text-transform: normal;
+    padding-right: 0 !important;
+    padding-top: 5px !important;
+    margin: 0 auto !important;
+    width: 25% !important;
+    text-align: center !important;
+    position: relative !important;
+    float: right !important; }
+
+  /* line 133, ../sass/responsive.scss */
+  nav ul li:last-child {
+    float: none !important;
+    display: none; }
+
+  /* line 138, ../sass/responsive.scss */
+  div.triple h4 {
+    font-size: 16px;
+    letter-spacing: -1px;
+    text-transform: none; }
+
+  /* line 144, ../sass/responsive.scss */
+  span.logo {
+    height: 44px;
+    line-height: 52px;
+    padding-left: 0;
+    padding-right: 0;
+    float: none;
+    text-align: center !important; }
+
+  /* line 153, ../sass/responsive.scss */
+  h3 {
+    padding-top: 25px;
+    font-size: 38px;
+    line-height: 1.2em;
+    text-transform: underline;
+    margin-bottom: 0.25em; }
+
+  /* line 161, ../sass/responsive.scss */
+  h3#contact {
+    font-size: 22px;
+    margin-bottom: 0.5em; }
+
+  /* line 166, ../sass/responsive.scss */
+  p {
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 1em; }
+
+  /* line 172, ../sass/responsive.scss */
+  .mobile-hidden {
+    display: none; }
+
+  /* line 176, ../sass/responsive.scss */
+  img.responsive {
+    padding-top: 10px; }
+
+  /* line 180, ../sass/responsive.scss */
+  div.content h1 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 55px;
+    line-height: 1.2em; }
+
+  /* line 186, ../sass/responsive.scss */
+  div.content h2 {
+    font-size: 28px;
+    line-height: 1.2em;
+    margin-bottom: 10px; }
+
+  /* line 192, ../sass/responsive.scss */
+  img.gallery {
+    width: 80%; }
+
+  /* line 196, ../sass/responsive.scss */
+  fieldset.info_fieldset {
+    width: 240px; }
+
+  /* line 200, ../sass/responsive.scss */
+  input#name.quote.abc.mandatory, input#email.quote.email.mandatory, input#phone.quote.numeric.mandatory {
+    margin: 10px auto !important;
+    padding: 1px !important;
+    line-height: 24px;
+    height: 24px;
+    font-size: 17px;
+    -webkit-apperance: none; }
+
+  /* line 209, ../sass/responsive.scss */
+  input.quote.submit {
+    font-size: 17px;
+    -webkit-apperance: none;
+    margin: 10px auto !important; }
+
+  /* line 215, ../sass/responsive.scss */
+  select.quote {
+    margin: 10px auto;
+    line-height: 20px;
+    font-size: 16px;
+    -webkit-apperance: none; } }
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  /* line 231, ../sass/responsive.scss */
+  nav ul li {
+    font-size: 13px !important;
+    letter-spacing: 0;
+    padding-top: 0px; }
+
+  /* line 237, ../sass/responsive.scss */
+  div.triple h4 {
+    font-size: 18px; } }

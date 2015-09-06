@@ -1,0 +1,389 @@
+@import "vars"; // import _global_variables.scss
+@import "mixins"; // import _mixins.scss
+@import "compass/css3";
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+@import "compass/css3/opacity";
+@import "compass/reset";
+
+/* SCROLLR */
+
+html, body {
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	overflow-x:hidden;
+	color: #fff;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+
+p {
+	font-family: "ArcherPro-Bold", serif;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+
+div#bg{
+	background-image: url(../images/bg.jpg);
+	top: 0; left: 0;
+  	width: 100%; height: 100%;
+	margin: 0 auto;
+	@include background-size(100% auto);
+	color:#fff;
+	@include single-box-shadow; 
+	background-attachment:fixed;
+}
+
+.holder{
+	width:90%;
+	margin: 0 auto;
+	text-align:center;
+}
+
+
+.skrollable {
+	position:fixed;
+	z-index:100;
+}
+
+.skrollable .skrollable {
+	position:absolute;
+}
+
+.skrollable .skrollable .skrollable {
+	position:static;
+}
+
+/* ------ UNIT 1 --------- */
+
+.home {
+	background-image: url(../images/home-fold.jpg);
+	@include background-size(cover);
+	top:0; bottom:0; right:0; left:0;
+}
+
+.home .content {
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	width:100%;
+	margin: 0 auto;
+ }
+
+.home h1 {
+	font-family: "ClarendonLTStd", serif;
+ 	color:#fff;
+	@include single-text-shadow; 
+	text-transform:uppercase;
+	margin-bottom:0;
+	letter-spacing: 1px;
+	font-size: round($base-font-size * 3.8333*1.3);
+	line-height: round($base-font-size * 4.1666*1.13);
+	margin-bottom: round($base-font-size * 1.1666*0.4);
+	margin-top: round($base-font-size * 1.1666*2);
+}
+
+.home h2 {
+	font-family: "ArcherPro-Bold", serif;
+ 	color:#fff;
+	@include single-text-shadow;
+	letter-spacing:1px; 
+	font-size: round($base-font-size * 2.9166*0.7);
+	line-height: round($base-font-size * 3.333*0.5);
+	margin-bottom: round($base-font-size * 1.1666*1.5);
+}
+
+img.gas-safe {
+	position:absolute;
+	bottom:5%;
+	right:5%;
+}
+
+/* ------ NAV --------- */
+
+.nav {
+	background-color:#181818;
+	@include single-box-shadow; 
+	width:100%;
+	height:75px;
+	z-index:120;
+}
+
+.nav li {
+  @include background-image(linear-gradient(top, #d2a163, #b56b42));
+  font-family: "ClarendonLTStd-Bold", serif;
+  letter-spacing:1px;
+  padding-right:25px;
+  padding-top:15px;
+  float:right;
+  position:static;
+  height:52px;
+  text-transform:uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size:round($base-font-size*1.5);
+  line-height:round($base-line-height*1.85);
+  display:inline-block;
+}
+
+.nav li:last-child {
+	float:left;
+	padding-left:25px;
+
+}
+
+.nav li:hover {
+  @include background-image(linear-gradient(top, #d2a163, #95441a));
+  text-decoration: underline !important;
+
+}
+
+.nav ul {
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	position:relative;
+	width:100%;
+}
+
+span.logo {
+	background-image: url(../images/logo.png);
+	display:inline-block;
+	width:380px;
+	background-repeat: no-repeat;
+}
+
+
+span.logo:hover {
+	background-image: url(../images/logo-h.png)
+}
+
+/* -------- About Unit --------- */
+
+h3 {
+	font-family: "ClarendonLTStd-Bold", serif;
+ 	color:#fff;
+ 	padding-top:$base-line-height*4;
+	@include single-text-shadow; 
+	font-size: round($base-font-size * 2.333*1.35);
+	line-height: round($base-font-size * 2.833*1.35);
+	margin-bottom:$base-line-height*0.5;
+}
+
+h4 {
+	font-family: "ArcherPro-Book", serif;
+ 	color:#fff;
+	@include single-text-shadow;
+ 	padding-top:$base-line-height*0.5;
+	font-size:$base-font-size*2.5;
+	text-transform:uppercase;
+	letter-spacing:1px; 	
+}
+
+p.sub {
+ 	letter-spacing: 1px;
+ 	font-weight: bold;
+ 	width: 90%;
+ 	margin: 0 auto;
+	@include single-text-shadow; 	
+}
+
+.center {
+	width:100%;
+	margin: 0 auto;
+}
+
+div.equation-b {
+	width:40%;
+	display:inline-block;
+	float:left;
+}
+
+div.equation-s {
+	width:20%;
+	display:inline-block;
+	float:left;
+}
+
+img.responsive{
+	width:100%
+}
+
+/* -------- ACTION ---------- */
+
+.action {
+	width: 350px;
+	height: 50px;
+	line-height: 50px;
+	border: 3px solid #fff;
+	display: inline-block;
+	color: #fff;
+	font-family: "ArcherPro-Bold", serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-size:$base-font-size*1.2;
+	text-align: center;
+ 	margin:$base-font-size*1.2 auto;
+
+}
+
+.action:hover {
+	color:#fff;
+	@include text-shadow(rgba(black, 0.8) 0px 0px 15px); 
+	@include box-shadow(rgba(black, 0.8) 0px 0px 10px);
+}
+
+.action:active {
+	background-color: #fff !important;
+    @include text-shadow(none); 
+    color: #b04e22 !important;
+}
+
+
+/* ------- SERICES --------- */
+
+
+div.service-container {
+	width:250%;
+}
+
+
+div.triple {
+	width:12%;
+	margin:1.5% auto;
+	float:left;
+	display:inline-block;
+
+}
+
+img.big {
+	max-width:380px;
+	margin: 0 auto;
+	width: 90%
+}
+
+
+/* ------------- FORM -----------*/
+
+fieldset {
+	width:350px;
+	margin: 0 auto;
+}
+
+input.quote, select.quote {
+	background-color: transparent;
+	text-align: center;
+	margin: 15px auto;
+	border: 3px solid #fff;
+	font-family: "ArcherPro-Bold", serif;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-size:$base-font-size*1.2;
+	width:98%;
+	line-height:$base-font-size*2;
+}
+
+input.quote:valid, input.quote:valid:hover {
+    background-color: #fff;
+    @include text-shadow(none); 
+    color: #b04e22;
+}
+
+::-webkit-input-placeholder {color: #fff;}
+:-moz-placeholder { color: #fff;}
+::-moz-placeholder { color: #fff;}
+:-ms-input-placeholder { color: #fff;}
+input:focus::-webkit-input-placeholder {color: transparent!important; @include text-shadow(none); }
+input:focus::-webkit-input-placeholder{color: transparent!important; @include text-shadow(none); }
+input:focus::-moz-placeholder{color: transparent!important; @include text-shadow(none); }
+input:focus:-moz-placeholder{color: transparent!important; @include text-shadow(none); }
+
+select.quote{
+	background: url(../images/down-bg.png) no-repeat transparent;
+	@include background-size(100% 100%);
+	-webkit-appearance: none;
+	text-align: center;
+	padding: 7px;
+	width:100%;
+	@include single-box-shadow; 
+
+}
+
+select.quote:hover {
+	color: #b04e22;
+	border: 3px solid #fff;
+	@include text-shadow(rgba(black, 0.8) 0px 0px 10px); 
+	@include box-shadow(rgba(black, 0.8) 0px 0px 10px);
+	background: url(../images/down-bg-h.png) no-repeat transparent;
+	@include background-size(100% 100%);
+}
+
+select.quote:focus:required:invalid {
+	color: #b04e22;
+	border: 3px solid #fff;
+	@include text-shadow(rgba(black, 0.8) 0px 0px 10px); 
+	@include box-shadow(rgba(black, 0.8) 0px 0px 10px);
+	background: url(../images/down-bg-h.png) no-repeat transparent;
+	@include background-size(100% 100%);
+}
+
+select.quote:required:valid {
+	background:#fff;
+	@include text-shadow(none); 
+	background-image: none;
+	color: #b04e22;
+}
+
+
+select.quote:required:valid:hover {
+	background:#fff;
+	@include text-shadow(none); 
+	background-image: none !important;
+	color: #b04e22;
+
+}
+
+input.quote:hover {
+	color: #fff;
+	border: 3px solid #fff;
+	@include text-shadow(rgba(black, 0.8) 0px 0px 10px); 
+	@include box-shadow(rgba(black, 0.8) 0px 0px 10px);
+}
+
+input.quote:focus {
+    background-color: #fff;
+    @include text-shadow(none); 
+    color: #b04e22;	border: 3px solid #fff;
+	@include text-shadow(rgba(black, 0.8) 0px 0px 10px); 
+	@include box-shadow(rgba(black, 0.8) 0px 0px 10px);
+
+}
+
+.quote.submit {
+	-webkit-appearance: none;
+	font-size:$base-font-size*1.8;
+	width:100%;
+	line-height:$base-font-size*2.5;
+	margin: 15px auto;
+	text-align: center;
+	font-family: "ArcherPro-Bold", serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	background: transparent !important;
+	color: #fff !important;
+}
+
+.quote.submit:hover, .quote.submit:focus {
+	-webkit-appearance: none;
+	color: #fff;
+	border: 3px solid #fff;
+	font-weight: bold;
+	background: #fff !important;
+	color: #b04e22 !important;
+}
