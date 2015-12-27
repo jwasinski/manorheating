@@ -168,29 +168,27 @@
 				If you are interested in a free quote please fill out this form and I will aim to get back to you within the day. If it is more urgent you can call me direct on <strong itemprop="telephone">07887 526 046</strong>.<meta itemprop="email" content="waldemar@manorheating.co.uk">
 				</p>
 				
+			<form action="http://formspree.io/manorheatingcouk@gmail.com "
+			      method="POST">
+			    <input class="quote abc mandatory" type="text" id="name" name="name" placeholder="Your Name..." ></br>
+			    <input class="quote email mandatory" type="email" id="email" name="_replyto" placeholder="Your Email Address..."></br>
+			    <input  class="quote numeric mandatory" type="text" id="phone" name="phone" placeholder="Your Telephone Number..." ></br>
+			    	<select class="quote" id="type" name="type" placeholder="Your Telephone Number..." required >
+					    				<option value="" disabled selected style='display:none;'></option>
+					    				<option>Bathroom</option>
+					    				<option>Boilers</option>
+					 					<option>Kitchens</option>
+					    				<option>Gas Fires</option>
+					 					<option>Radiators</option>
+					 					<option>Underfloor Heating</option> 					
+					 					<option>Building Services</option>
+						 				<option>Other</option>
+					    			</select><br/>
 
-				<form id="quote" action="javascript:alert('success!');">
-					<div id="note"></div>
-					<div id="fields">
-						<fieldset class="info_fieldset">
-						<input class="quote abc mandatory" id="name" name="name" type="text" placeholder="Your Name..."  required /><br/>
-						<input class="quote email mandatory" id="email" name="email" type="text" placeholder="Your Email Address..."  required /><br/>
-						<input class="quote numeric mandatory" id="phone" name="phone" type="text" placeholder="Your Telephone Number..."  required /><br/>
-						<select class="quote" id="type" name="type" placeholder="Your Telephone Number..." required >
-		    				<option value="" disabled selected style='display:none;'></option>
-		    				<option>Bathroom</option>
-		    				<option>Boilers</option>
-		 					<option>Kitchens</option>
-		    				<option>Gas Fires</option>
-		 					<option>Radiators</option>
-		 					<option>Underfloor Heating</option> 					
-		 					<option>Building Services</option>
-			 				<option>Other</option>
-		    			</select><br/>
-						<input class="quote submit" type="submit" value="Submit" onClick="_gaq.push(['_trackEvent', 'Contact', 'Submit']);">
-					</fieldset>
-					</div>
-				</form>
+			 	<input type="hidden" name="_next" value="http://manorheating.co.uk/" />
+				<input type="hidden" name="_subject" value="ManorHeating Enquiry" />
+			    <input class="quote submit" type="submit" value="Send" onClick="_gaq.push(['_trackEvent', 'Contact', 'Submit']);">
+			</form>
 				<br/>
 			</div>
 		<br/>
